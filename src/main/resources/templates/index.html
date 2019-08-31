@@ -1,0 +1,43 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Datatables</title>
+<link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"
+	rel="stylesheet"></link>
+<link th:href="@{/webjars/datatables/css/dataTables.bootstrap4.min.css}"
+	rel="stylesheet"></link>
+</head>
+<body>
+	<div>
+		<div class="container-fluid">
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th class="search-filter">Name</th>
+						<th class="search-filter">Email</th>
+						<th class="search-filter">Phone</th>
+						<th>Registration Date</th>
+						<th class="select-filter">Country</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+				<tfoot>
+					<tr>
+						<th>Name</th>
+						<th>Email</th>
+						<th>Phone</th>
+						<th>Registration Date</th>
+						<th>Country</th>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+	</div>
+</body>
+<script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+<script th:src="@{/webjars/bootstrap/js/bootstrap.bundle.min.js}"></script>
+<script th:src="@{/webjars/datatables/js/jquery.dataTables.min.js}"></script>
+<script th:src="@{/webjars/datatables/js/dataTables.bootstrap4.min.js}"></script>
+<script th:src="@{/js/index.js}"></script>
+</html>
