@@ -32,7 +32,6 @@
 				});
 			}
 		},
-// searching : false,
 		serverSide : true,
 		processing : true,
 		columns : [ {

@@ -17,8 +17,6 @@ public interface UserRepo
 	default public void customize(QuerydslBindings bindings, QUser root) {
 		bindings.bind(String.class)
 				.first((SingleValueBinding<StringPath, String>) StringExpression::containsIgnoreCase);
-//		StringPath search = Expressions.stringPath("search");
-//		bindings.bind(search).first((SingleValueBinding<StringPath, String>) StringExpression::containsIgnoreCase);
 	}
 
 }
